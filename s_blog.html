@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tiled iPhone-Style Notes</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background: #000; /* Black background */
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .note-container {
+    position: relative;
+    width: 320px;     /* Adjusted size so more notes fit on screen */
+    height: 600px;    /* Adjusted height accordingly */
+    background: #1C1C1E;
+    border-radius: 30px;  /* Smaller radius to fit the smaller size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px 15px; /* space for notch and content */
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  }
+
+  /* Simulate the notch 
+  .note-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;  /* Adjusted for smaller note width 
+    height: 20px;  
+    background: #000; 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+    */
+
+    .note-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0 0 10px;
+        text-align: left;
+        color: #fff;
+    }
+
+  .note-text {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+</style>
+</head>
+<body>
+
+<!-- Repeat as many notes as you'd like -->
+<div class="note-container">
+    <p class="note-title">What is this?</p>
+    <p class="note-text">
+        I never liked writing, but it’s important, so I have to practice.<br><br>
+
+        I gave myself some constraints:<br>
+        - Each note has to fit in a screenshot from my phone<br>
+        - No links allowed<br>
+        - No equations allowed<br>
+        - No help from AI<br>
+        - No help from Googling<br><br>
+        
+        I have to say that writing like this is quite fun.<br><br>
+        
+        Buona Lettura
+      </p>
+  </div>
+<div class="note-container">
+  <p class="note-title">Life</p>
+  <p class="note-text">
+    The Earth is in the middle of two thermal reservoirs: The Sun and deep space.<br>
+    If two thermal reservoirs are available it becomes possible to extract energy.<br><br>
+    
+    Once you have this energy you can use it in a multitude of ways<br><br>
+    
+    - Store it for later<br>
+    - Create more copies of yourself<br>
+    - Increase the amount of energy you can extract in the future<br><br>
+    
+    You can try to get more creative, but most of the other options are variations or combinations of the ones above<br><br>
+    
+    Any heat engine that does any of the above is a life form<br><br>
+    
+    Since the extractable energy is not infinite it is inevitable to enter a competition between the various life forms. That competition is evolution<br>
+    </p>
+</div>
+
+<div class="note-container">
+  <p class="note-title">The importance of Curiosity</p>
+  <p class="note-text">
+    Every emotion has a function<br><br>
+
+    - Love is for reproduction<br>
+    - Fear is for avoiding risks<br>
+    - Curiosity is for learning<br><br>
+
+    Like every other emotion, they exist because they are useful for survival, and as such they are just emergent behaviours<br><br>
+
+    I believe engineering emergent behaviours in AI is a waste of time, but curiosity is special— Curiosity is what makes us curate our own dataset<br><br>
+
+    The whole field of dataset curation will be irrelevant once a good model for curiosity arises<br><br>
+
+    The free energy principle promises to model curiosity starting from bayesian mechanics, but I haven’t found a good explanations or convincing experiments
+  </p>
+</div>
+
+<div class="note-container">
+  <h1 class="note-title">Don't let your reward model be hijacked</h1>
+  <p class="note-text">
+    You don’t control your reward circuitry. That’s by design<br><br>
+
+    If you had a button that can activate your reward circuitry you would spam it until you die<br><br>
+
+    This actually happened in real life:<br>
+    In 1986 doctors implanted an electrode in a patient’s brain capable of stimulating her thalamus.<br>
+    The woman could control it with a device and the results where devastating<br><br>
+
+    Addictive drugs are like that button. That’s why they are bad<br><br>
+
+    In general whatever controls your reward model, controls you. Choose what controls you wisely
+  </p>
+</div>
+
+<div class="note-container">
+  <h1 class="note-title">Paradise</h1>
+  <p class="note-text">
+    It is supposed to be the most amazing world there can ever be.<br><br>
+
+We humans design virtual worlds, and they are called video games. They don’t look at all like the stereotypical type of world you associate with concept of paradise— That’s because jumping aimlessly in the clouds is boring<br><br>
+    
+    We humans want challenges, and a perfect world doesn’t have any.<br>
+    Artificial super intelligence can turn our world into a paradise: pointless and boring<br><br>
+
+    Lately I’ve been playing less video games because the real world is more fun.<br><br>
+
+    <br>
+    …<br>
+    Is our world actually a paradise in disguise?
+  </p>
+</div>
+
+<div class="note-container">
+  <h1 class="note-title">Minecraft</h1>
+  <p class="note-text">
+    Every Minecraft player subconsciously knows what is the meaning of life<br><br>
+
+    In most games you are given a mission— that’s the meaning of your life inside of that video game<br><br>
+
+    But Minecraft is different, you are given a world and its laws of physics: its game mechanics. Sounds familiar?<br><br>
+
+    Every game of Minecraft has no “real” meaning. Despite this, Minecraft is the most played video game of all time, and it’s no coincidence.<br><br>
+
+    Usually the developers take on the task of choosing the game’s mission. Notch *the creator of Minecraft* has delegated the role of choosing that to you.<br><br>
+
+    If the meaning of life is given externally, it’s just restriction— But if it comes from within you, then it’s freedom.<br><br>
+  </p>
+</div>
+
+<div class="note-container">
+  <h1 class="note-title">Grand Theft Auto</h1>
+  <p class="note-text">
+    In GTA you are a criminal and you earn money doing crimes— It’s very formative I must say.<br><br>
+
+    But being a criminal is no easy task, it’s a lot of work— Fortunately in GTA there are cheat codes<br><br>
+    
+    When I first discovered that, It was amazing! I would fly around with helicopters and I wouldn’t even need to land them properly— If it crashes I can take a new one<br><br>
+    
+    But within in a few days, what was once a fun game, became pointless and boring. Why even play if I already have everything?<br><br>
+    
+    So I started a new campaign— I went back to being poor, and I fell in love with the game again.<br><br>
+    
+    In real life it’s the same: I much prefer my life over the life of a billionaire’s son.<br>
+    That’s because I have an objective to strive for— It’s very formative I must say.
+  </p>
+</div>
+
+<div class="note-container">
+  <h1 class="note-title">Recursive definitions</h1>
+  <p class="note-text">
+    Every word in the vocabulary is defined in terms of other words. Isn’t this strange?<br><br>
+
+    Some words indicate things in the real world, so that solves the paradox, but some words are peculiar…<br><br>
+
+    Take the world “Existence”: It can only be defined in terms of itself (try it).<br><br>
+
+    This subtle fact explains why some questions are wierdly un-answerable:<br>
+    - Why do I exist?<br>
+    - What is existence?<br>
+    - Why does the universe exist?<br><br>
+
+
+    All of these questions can be translated into:<br><br>
+
+        Why does *this thing that exists* exist?<br><br>
+
+    And since the definition of existence is recursive the question is recursive and the answer is recursive. People that don’t understand recursion get stuck in an infinite loop.<br>
+  </p>
+</div>
+<div class="note-container">
+  <h1 class="note-title">Competition creates cancer</h1>
+  <p class="note-text">
+    In any self-organising system with limited resources each sub-element competes to get them<br><br>
+
+    - In human societies companies compete for resources<br>
+    - In ecosystems life forms compete for resources<br>
+    - In multicellular organism cells compete for resources<br><br>
+
+    In multicellular organisms some cells are better than others at gaining resources and multiply<br><br>
+
+    Sometimes the immune system kills them, but the best ones survive and develop over time resistance and speed<br><br>
+
+    If they are too good they grow so much to ultimately kill the host and themselves in the process<br><br>
+
+    Ironically, they are so good at playing the game that they end up loosing
+  </p>
+</div>
+<!-- 
+<div class="note-container">
+    <h1 class="note-title">Note 6</h1>
+    <p class="note-text">Feel free to change the colors, fonts, or add additional styling as needed.</p>
+</div>
+ -->
+
+<!-- Add more notes as desired -->
+
+</body>
+</html>
