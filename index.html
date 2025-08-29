@@ -1,197 +1,185 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Projects</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMS9095G9B"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-BMS9095G9B');
-		</script>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Sacco - Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Custom styles to apply the font */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f8f8f8; /* A very light grey, close to the image */
+        }
+    </style>
+</head>
+<body class="text-neutral-800">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Main container with padding and max-width -->
+    <div class="max-w-3xl mx-auto px-6 sm:px-8 py-12 md:py-20">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Francesco Sacco</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <!-- Header Section -->
+        <header class="flex justify-between items-center mb-20 md:mb-24">
+            <!-- Logo -->
+            <div>
+                <a href="#" class="text-3xl font-bold tracking-tighter">Sacco</a>
+            </div>
+            <!-- Navigation -->
+            <nav class="flex items-center space-x-5 sm:space-x-6 text-base">
+                <a href="https://francesco215.github.io" class="text-neutral-600 hover:text-neutral-900 hover:underline transition-colors">Blog</a>
+                <button aria-label="Toggle dark mode" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="https://github.com/Francesco215" aria-label="GitHub profile" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+            </nav>
+        </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Projects</a></li>
-								<li><a href="curriculum.html">Curriculum</a></li>
-								<li><a href="papers.html">Papers</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+        <main>
+            <!-- Introduction Section -->
+            <section class="mb-24">
+                <h1 class="text-7xl md:text-8xl font-normal tracking-tight mb-8">Hi,</h1>
+                <p class="text-lg md:text-xl text-neutral-700 leading-relaxed">
+                    I'm a physicist interested in machine learning, statistical physics, world modelling, robotics and biotech. I waste lots of times coding things of no use, but sometimes they become useful.
+                </p>
+            </section>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><a href="https://github.com/Francesco215"><span class="icon brands fa-github"></span></a></div>
-							<h2>Francesco Sacco</h2>
-							<p>My projects</p>
-						</div>
-					</section>
+            <!-- Projects & Research Section -->
+			<section class="mb-24">
+                <h2 class="text-4xl font-normal tracking-tight mb-6">Blog</h2>
+                <hr class="border-neutral-200 mb-8">
+                
+                <!-- List of articles -->
+                <div class="space-y-10">
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://francesco215.github.io/autoregressive_diffusion/" class="hover:underline">Autoregressive Diffusion</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">A small story about building a long-context World Model with no money.</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://francesco215.github.io/Language_CA/" class="hover:underline">Requirements for Self-Organization</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">What do you need to have a structure emerge spontaneously?</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://francesco215.github.io/logistic_map/" class="hover:underline">Logistic Map</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">A tour the force on chaotic systems, fractals and renormalization group</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://francesco215.github.io/Masters_thesis/topology.html" class="hover:underline">What does Topology have to do with Physics?</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">A short blog post on some of the links between topology and physics</p>
+                        </div>
+                    </article>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/cellular.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Adversarial takeover of Neural Cellular Automata 🇬🇧</h2>
-										<p> This is a paper that I did in collaboration with Google and Allen Discovery center researchers, and it shows how it is possible to change the properties of an entire organism just by changing some of its cells</p>
-										<a href="https://letteraunica.github.io/neural_cellular_automata/" class="special">Learn more</a>
+            <section class="mb-24">
+                <h2 class="text-4xl font-normal tracking-tight mb-6">Projects</h2>
+                <hr class="border-neutral-200 mb-8">
+                
+                <!-- List of articles -->
+                <div class="space-y-10">
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="http://www.noteician.com" class="hover:underline">Noteician</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">Automating doctor reports to save time. We have users and are scaling up.</p>
+                        </div>
+                    </article>
+                     <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://letteraunica.github.io/neural_cellular_automata/" class="hover:underline">Adversarial Takeover of Neural Cellular Automata</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">A paper in collaboration with Google and Allen Discovery center researchers, showing how to change an organism's properties by altering some of its cells.</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://github.com/Francesco215/neural_env" class="hover:underline">Neural Environment</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">Code to quickly and efficiently train diffusion-based neural environments with just 500 lines of code.</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://github.com/Francesco215/text-diffusion" class="hover:underline">Text-Diffusion</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">Generates text with diffusion models. A reproduction of the "Continous Diffusion for Categorical Data" paper by Deepmind.</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://github.com/LetteraUnica/menzalib" class="hover:underline">Menzalib</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">A Python library for processing data from electronic instrumentation, calculating uncertainty, and outputting results to LaTeX.</p>
+                        </div>
+                    </article>
+                     <article class="flex flex-col sm:flex-row justify-between sm:items-start">
+                        <div class="mb-2 sm:mb-0">
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                <a href="https://github.com/Dirac231/BCHamming" class="hover:underline">Quantum Hamming and Reed-Solomon error correction</a>
+                            </h3>
+                            <p class="text-neutral-600 mt-1">A repository for the Europe Qiskit Hackathon 2021, focusing on repurposing classic error correction codes for quantum systems.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-									</div>
-							</section>
+            <!-- Notes Section -->
+            <section>
+                <h2 class="text-4xl font-normal tracking-tight mb-6">Notes</h2>
+                <hr class="border-neutral-200 mb-8">
+                
+                <div class="space-y-10">
+                    <article>
+                        <h3 class="text-xl md:text-2xl font-medium">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Computazione%20Quantistica.pdf" class="hover:underline">Quantum computing</a>
+                        </h3>
+                    </article>
+                    <article>
+                        <h3 class="text-xl md:text-2xl font-medium">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Interazione%20Radiazione-Materia_compressed.pdf" class="hover:underline">Quantum theory of Light</a>
+                        </h3>
+                    </article>
+                    <article>
+                        <h3 class="text-xl md:text-2xl font-medium">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20Statistica_compressed.pdf" class="hover:underline">Statistical Physics</a>
+                        </h3>
+                    </article>
+                    <article>
+                        <h3 class="text-xl md:text-2xl font-medium">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20dello%20stato%20solido.pdf" class="hover:underline">Solid state physics</a>
+                        </h3>
+                    </article>
+                </div>
+            </section>
+        </main>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/logistic.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Logistic Map 🇬🇧</h2>
-										<p>This are some visual rapresentation that i did for the logistic map for the exam of complex systems at the University of Pisa</p>
-										<a href="https://francesco215.github.io/logistic_map/" class="special">Try it</a>
-									</div>
-								</div>
-							</section>
+    </div>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/multimeter.webp" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Menzalib 🇮🇹</h2>
-										<p>A python library that, given the data from the electronic instrumentation, calculates the uncertainty of the measurements, does data processing and can output the results directly into Latex.
-											It can be used to halve the time to produce a lab report and many course mates used it</p>
-										<a href="https://github.com/LetteraUnica/menzalib" class="special">Learn more</a>
-								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/bchamming.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Quantum Hamming and Reed-Solomon error correction 🇬🇧</h2>
-										<p>This repository was created for the Europe Qiskit Hackaton 2021. It focuses on re-purpusing classic error correction code and make it Quantum</p>
-										<a href="https://github.com/Dirac231/BCHamming" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-						
-
-						<!-- Four -->
-							<section id="four" class="wrapper alt style2">
-								<div class="inner">
-									<h2 class="major">My notes</h2>
-									<p>
-										This are the notes i have written for some of my exams during the master 
-									</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/copertine_appunti/computazione.jpg" alt="" /></a>
-											<h3 class="major">Quantum computing 🇮🇹</h3>
-											<a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Computazione%20Quantistica.pdf" class="special" download="">View</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/copertine_appunti/radiazione.jpg" alt="" /></a>
-											<h3 class="major">Quantum theory of Light 🇮🇹</h3>
-											<a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Interazione%20Radiazione-Materia_compressed.pdf" class="special">View</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/copertine_appunti/statistica.jpg" alt="" /></a>
-											<h3 class="major">Statistical Physics 🇮🇹</h3>
-											<a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20Statistica_compressed.pdf" class="special">View</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/copertine_appunti/stato_solido.jpg" alt="" /></a>
-											<h3 class="major">Solid state physics 🇮🇹</h3>
-											<a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20dello%20stato%20solido.pdf" class="special">View</a>
-										</article>
-									</section>
-								</div>
-							</section>
-					</section>
-
-				<!-- Link a altre pagine -->
-					<section id="five" class="wrapper style3">
-						<div class="inner">
-							<h2 class="major">Other sections of the website</h2>
-							<section class="features">
-								<article>
-									<a href="curriculum.html" class="image"><img src="images/curriculum_vitae.png" alt="" /></a>
-									<h3 class="major">Curriculum</h3>
-									<p>Click here to see an overview of my carreer</p>
-								</article>
-								<article>
-									<a href="papers.html" class="image"><img src="images/papers.jpg" alt="" /></a>
-									<h3 class="major">Papers</h3>
-									<p>I'm working on it!</p>
-								</article>
-							</section>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<h2 class="major">Get in touch</h2>
-									<p>
-										If you want to contact me for work-related topics contact me via mail,
-										github, or linkedin
-									</p>
-
-								</div>
-								<div class="col-6 col-12-medium">							
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">francesco215@live.it</a></li>
-										<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/francesco-sacco-606451167/">linkedin</a></li>
-										<li class="icon brands fa-github"><a href="https://github.com/Francesco215">Github</a></li>
-									</ul>
-								</div>
-							</div>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
