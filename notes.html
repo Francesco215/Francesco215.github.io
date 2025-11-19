@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes - Francesco Sacco</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { font-family: "Times New Roman", Times, serif; background-color: #f8f8f8; }
-    </style>
-</head>
-<body class="text-neutral-800">
 
-    <div class="max-w-3xl mx-auto px-6 sm:px-8 py-12 md:py-20">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
         <!-- Header Section -->
-        <header class="flex justify-between items-center mb-20 md:mb-24">
+        <header class="site-header">
             <div>
-                <a href="index.html" class="text-3xl font-bold tracking-tighter">Sacco</a>
+                <a href="index.html" class="logo">Sacco</a>
             </div>
-            <nav class="flex items-center space-x-5 sm:space-x-6 text-base">
-                <a href="blog.html" class="text-neutral-600 hover:text-neutral-900 hover:underline transition-colors">Blog</a>
-                <a href="projects.html" class="text-neutral-600 hover:text-neutral-900 hover:underline transition-colors">Projects</a>
-                <a href="notes.html" class="text-neutral-600 hover:text-neutral-900 hover:underline transition-colors">Notes</a>
-                <a href="https://x.com/FrancescoSacco1" aria-label="X profile" class="text-neutral-600 hover:text-neutral-900 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            <nav class="nav-menu">
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="notes.html" class="nav-link">Notes</a>
+                <a href="https://x.com/FrancescoSacco1" aria-label="X profile" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                     </svg>
                 </a>
-                <a href="https://github.com/Francesco215" aria-label="GitHub profile" class="text-neutral-600 hover:text-neutral-900 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <a href="https://github.com/Francesco215" aria-label="GitHub profile" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
                 </a>
             </nav>
         </header>
 
         <main>
             <section>
-                <h1 class="text-4xl font-normal tracking-tight mb-6">Notes</h1>
-                <p class="text-lg md:text-xl text-neutral-700 leading-relaxed">
+                <h1 class="page-title">Notes</h1>
+                <p class="intro-text">
                     This are the some of my notes from the university days, they are all in Italian.
                 </p>
-                <hr class="border-neutral-200 mb-8">
-                
-                <div class="space-y-10">
+                <hr class="divider">
+
+                <div class="article-list">
                     <article>
-                        <h3 class="text-xl md:text-2xl font-medium">
-                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20Statistica_compressed.pdf" class="hover:underline">Statistical Physics</a>
+                        <h3 class="article-title">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20Statistica_compressed.pdf"
+                                class="article-link">Statistical Physics</a>
                         </h3>
                     </article>
                     <article>
-                        <h3 class="text-xl md:text-2xl font-medium">
-                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Interazione%20Radiazione-Materia_compressed.pdf" class="hover:underline">Quantum theory of Light</a>
+                        <h3 class="article-title">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Interazione%20Radiazione-Materia_compressed.pdf"
+                                class="article-link">Quantum theory of Light</a>
                         </h3>
                     </article>
                     <article>
-                        <h3 class="text-xl md:text-2xl font-medium">
-                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20dello%20stato%20solido.pdf" class="hover:underline">Solid state physics</a>
+                        <h3 class="article-title">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Fisica%20dello%20stato%20solido.pdf"
+                                class="article-link">Solid state physics</a>
                         </h3>
                     </article>
                     <article>
-                        <h3 class="text-xl md:text-2xl font-medium">
-                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Computazione%20Quantistica.pdf" class="hover:underline">Quantum computing</a>
+                        <h3 class="article-title">
+                            <a href="https://raw.githubusercontent.com/Francesco215/appunti/master/quaderni/Computazione%20Quantistica.pdf"
+                                class="article-link">Quantum computing</a>
                         </h3>
                     </article>
                 </div>
@@ -67,4 +78,5 @@
     </div>
 
 </body>
+
 </html>
